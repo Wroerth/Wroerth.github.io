@@ -1,0 +1,92 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #ffe6e6;
+  }
+  
+  .valentine {
+    position: relative;
+    width: 80%; /* Usamos el 80% del ancho de la pantalla */
+    max-width: 600px; /* Limitamos el ancho máximo */
+    height: 80vh; /* Usamos el 80% de la altura de la pantalla */
+    overflow: hidden;
+  }
+  
+  .envelope {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #ffcccc;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+  }
+  
+  .envelope.open {
+    transform: translateY(-50px);
+  }
+  
+  .card {
+    position: relative;
+    width: 90%; /* Usamos el 90% del ancho del contenedor */
+    height: 90%; /* Usamos el 90% de la altura del contenedor */
+    background: #ffffff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.2); /* Aumentamos el tamaño de la sombra */
+    transition: 0.5s;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .message {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .message h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .message p {
+    margin: 10px 0;
+  }
+  
+  .heart {
+    position: absolute;
+    bottom: -30px; /* Aumentamos la distancia desde abajo */
+    width: 60px; /* Aumentamos el tamaño del corazón */
+    height: 60px; /* Aumentamos el tamaño del corazón */
+    background: #ff5e62;
+    border-radius: 50%;
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .letter {
+    position: absolute;
+    bottom: 0;
+    width: 90%; /* Usamos el 90% del ancho del contenedor */
+    height: 30%; /* Usamos el 30% de la altura del contenedor */
+    background: #ffffff;
+    border-radius: 0 0 15px 15px; /* Ajustamos el radio de la esquina inferior */
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+    z-index: -1;
+  }
+  
+  .letter.open {
+    transform: translateY(-70px);
+  }
+  
